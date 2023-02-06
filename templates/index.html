@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Machine Learning App</title>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            Sheet Thickness: <input type="number" step="0.01" name="sheet", placeholder="Enter sheet thickness in mm" required/>
+            <br><br>
+            Yield Strength: <input type="number" step="0.01" name="yield", placeholder="Enter yield strength in mpa" required/>
+            <br><br>
+            Tensile Strength: <input type="number" step="0.01" name="tensile", placeholder="Enter tensile strength in mpa" required/>
+            <br><br>
+            Mold Weight: <input type="number" step="0.01" name="mold", placeholder="Enter mold weight in tons" required/>
+            <br><br>
+            <button value="Submit">Predict</button>
+        </form>
+        <p style="text-align: center;">{{ output }}</p>
+    </body>
+</html>
