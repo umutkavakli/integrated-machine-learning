@@ -1,13 +1,13 @@
-from flask import Flask, request, render_template
 import pandas as pd
 import joblib
+from flask import Flask, request, render_template
 
 # Declare a Flask app
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
-    
+
     # If a form is submitted
     if request.method == 'POST':
         
@@ -25,12 +25,14 @@ def main():
         
         # Get prediction
         prediction = model.predict(X)[0]
-        
+
     else:
         prediction = ""
-        
+
     return render_template('index.html', output = prediction)
 
 
 if __name__ == '__main__':
     app.run(debug = True)
+    
+    
