@@ -25,7 +25,6 @@ class GUI(QMainWindow):
         mold_weight = float(self.ui.mold_text.toPlainText())
 
         self.model.set_model(self.ui.comboBox.currentText())
-
         self.predict_output(sheet_thickness, yield_strength, tensile_strength, mold_weight)
 
 

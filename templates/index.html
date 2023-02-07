@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Your Machine Learning App</title>
+        <title>Integrated Machine Learning</title>
     </head>
     
     <body>
+        <h1 style="text-align: center; font-weight: bold;">Integrated Machine Learning</h1>
+        <br><br>
         <form name="form", method="POST", style="text-align: center;">
             <br>
-            Sheet Thickness: <input type="number" step="0.01" name="sheet", placeholder="Enter sheet thickness in mm" required/>
+            Sheet Thickness: <input type="number" step="0.01" name="sheet", placeholder="Enter in mm" required/>
             <br><br>
-            Yield Strength: <input type="number" step="0.01" name="yield", placeholder="Enter yield strength in mpa" required/>
+            Yield Strength: <input type="number" step="0.01" name="yield", placeholder="Enter in mpa" required/>
             <br><br>
-            Tensile Strength: <input type="number" step="0.01" name="tensile", placeholder="Enter tensile strength in mpa" required/>
+            Tensile Strength: <input type="number" step="0.01" name="tensile", placeholder="Enter in mpa" required/>
             <br><br>
-            Mold Weight: <input type="number" step="0.01" name="mold", placeholder="Enter mold weight in tons" required/>
+            Mold Weight: <input type="number" step="0.01" name="mold", placeholder="Enter in tons" required/>
+            <br><br><br>
+            <label for="model">Model</label>
+            <br><br>
+            <select name="model" id="model">
+              <option value="Linear Regression">Linear Regression</option>
+              <option value="Decision Tree Regressor">Decision Tree Regressor</option>
+              <option value="Random Forest Regressor">Random Forest Regressor</option>
+              <option value="XGBoost Regressor">XGBoost Regressor</option>
+              <option value="SVM Regressor">SVM Regressor</option>
+              <option value="KNN">KNN</option>
+            </select>
             <br><br>
             <button value="Submit">Predict</button>
         </form>
