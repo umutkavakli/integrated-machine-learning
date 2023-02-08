@@ -47,7 +47,7 @@ python3 gui.py
 ```
 <br>
 
-![](gifs/gui.gif)
+![](.gifs/gui.gif)
 
 <br>
 
@@ -59,4 +59,4 @@ For web server app:
 python3 web.py
 ```
 
-![](gifs/web.gif)
+![](.gifs/web.gif)
