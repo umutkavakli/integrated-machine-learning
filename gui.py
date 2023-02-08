@@ -15,7 +15,7 @@ class GUI(QMainWindow):
         self.model = ModelLoader()
 
     def predict_output(self, sheet_thickness: float, yield_strength: float, tensile_strength: float, mold_weight: float):
-        self.ui.output_text.setText(str(self.model.model.predict(np.array([sheet_thickness, yield_strength, tensile_strength, mold_weight]).reshape(1, -1))))
+        self.ui.output_text.setText(str(self.model.model.predict(np.array([sheet_thickness, yield_strength, tensile_strength, mold_weight]).reshape(1, -1))[0]))
  
 
     def click_button(self):
