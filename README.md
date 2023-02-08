@@ -1,6 +1,6 @@
 # Integrated Machine Learning
 
-An application that is integrated both desktop and web. Therefore, you can use it prompting with two files. The application calculates cost according to selected ML model with taken inputs.
+An machine learning application that is integrated both desktop and web. Therefore, you can use it prompting with two files. The application calculates cost according to selected ML model with taken inputs.
 
 <b>Inputs:</b>
 
