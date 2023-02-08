@@ -15,7 +15,6 @@ class ModelLoader:
     def __init__(self, model='Linear Regression'):
         self.model = joblib.load(f'models/{ModelLoader.__models[model]}.pkl')
         self.model_name = ModelLoader.__models[model]
-        self.data = pd.read_csv('data/data.csv')
         
     def set_model(self, model):
         self.model = joblib.load(f'models/{ModelLoader.__models[model]}.pkl')
