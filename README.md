@@ -23,8 +23,7 @@ An machine learning application that is integrated both desktop and web. Therefo
 - XGBoost Regressor
 - SVM
 - K-NN
-<hr><br>
-
+<hr>
 
 ## Usage
 
